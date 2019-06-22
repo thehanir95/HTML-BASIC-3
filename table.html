@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Tables</title>
+	<style type="text/css">
+		table ,th ,td {
+			border: 2px solid red ;
+			border-collapse: collapse;
+			text-align: center;
+			padding: 10px;
+		}
+		#custom-table th{
+			background-color: green;
+			color: white;
+        }
+        #custom-table td{
+        	background-color: yellow;
+        }
+	</style>
+
+</head>
+<body>
+
+<!-- Simple table-->
+	<h2>Simple Table</h2>
+<table width="100%">
+	<th>Name</th>
+	<th>Age</th>
+	<th>Address</th>
+<tr>
+	<td>Kamal</td>
+	<td>25</td>
+	<td>Kadawatha</td>
+</tr>
+<tr>
+	<td>Sunil</td>
+	<td>23</td>
+	<td>Kirillawala</td>
+</tr>
+</table>
+
+<!-- Colspan table-->
+	<h2>Table with Colspan</h2>
+	<table width="100%">
+	<th>Name</th>
+	<th colspan="2">Age & Address</th>
+	
+<tr>
+	<td>Kamal</td>
+	<td>25</td>
+	<td>Kadawatha</td>
+</tr>
+<tr>
+	<td>Sunil</td>
+	<td>23</td>
+	<td>Kirillawala</td>
+</tr>
+</table>
+
+<!-- Rowspan table-->
+<h2>Table with Rowspan</h2>
+	<table width="100%">
+	<th>ID</th>
+	<th>Name</th>
+	<th>Address</th>
+<tr>
+	<td rowspan="2">1</td>
+	<td>Kamal</td>
+	<td>Kadawatha</td>
+</tr>
+<tr>
+	
+	<td>Nimal</td>
+	<td>Kirillawala</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>Sunil</td>
+	<td>Kegalle</td>
+
+</tr>
+</table>
+
+<!--Custom Table -->	
+<h2>Custom Table</h2>
+	<table width="100%" id="custom-table">
+	<th>Name</th>
+	<th>Age</th>
+	<th>Address</th>
+<tr>
+	<td>Kamal</td>
+	<td>25</td>
+	<td>Kadawatha</td>
+</tr>
+<tr>
+	<td>Sunil</td>
+	<td>23</td>
+	<td>Kirillawala</td>
+</tr>
+</table>
+
+
+
+</body>
+</html>
